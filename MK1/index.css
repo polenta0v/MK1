@@ -1,0 +1,101 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: url('fon1.jpg') no-repeat center center fixed;
+  background-color: #f9f9f9;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: inherit;
+  filter: blur(8px);
+  z-index: -1;
+}
+
+.menu-container {
+  width: 80%;
+  max-width: 900px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.menu-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.menu-table th,
+.menu-table td {
+  padding: 30px;
+  text-align: center;
+  border: 7px solid #34261f;
+  background-color: #9c734a;
+}
+
+.menu-table th {
+  background-color: #bca389;
+  color: #333;
+}
+
+.dish-img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+#total-price {
+  margin-top: 15px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.button-container {
+  margin-top: auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+button {
+  width: 300px;
+  height: 80px;
+  background-color: #a74128;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #461d0b;
+}
